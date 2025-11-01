@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Magic 8-Ball</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes fade-in-deep {
+        0% {
+          opacity: 0;
+          transform: scale(0.8) translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1) translateY(0);
+        }
+      }
+      .animate-fade-in-deep {
+        animation: fade-in-deep 0.7s ease-out forwards;
+      }
+      /* New animations for the loading indicator */
+      @keyframes pulsate {
+        0%, 100% {
+          transform: scale(0.9);
+          opacity: 0.8;
+          filter: blur(20px);
+        }
+        50% {
+          transform: scale(1.1);
+          opacity: 1;
+          filter: blur(15px);
+        }
+      }
+      @keyframes orbit {
+        from {
+          transform: rotate(0deg) translateX(60px) rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg) translateX(60px) rotate(-360deg);
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.26.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

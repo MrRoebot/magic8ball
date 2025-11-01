@@ -1,0 +1,5 @@
+{
+  "name": "AI Magic 8-Ball",
+  "description": "A 'Magic 8-Ball' game that provides witty, skeptical responses about AI readiness, powered by Gemini. Click the button to 'shake' the ball and reveal your AI future.",
+  "requestFramePermissions": []
+}
